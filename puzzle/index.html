@@ -6,10 +6,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/main.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
 
   </head>
-  <body>
-    
+  <body onload="initiate()">
+    <div class="center">
+      <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="show(event)"></div>
+      <div id="tray" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <p id="winNote">Puzzle Complete!</p>
   </body>
 </html>

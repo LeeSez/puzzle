@@ -1,0 +1,33 @@
+#box, #tray {
+    width: 600px;
+    height: 600px;
+
+    border: 2px solid black;
+    display: inline-flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    align-content: flex-start;
+}
+#tray{
+    float: right;
+    margin-left:5vw;
+}
+
+#winNote {
+    font-family: 'Nabla', cursive;
+    font-size: 3em;
+    text-align:center;
+    
+    position:absolute;
+    top:30vh;
+    
+    width: 100vw;
+    visibility: hidden;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
